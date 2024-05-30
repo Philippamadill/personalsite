@@ -64,6 +64,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -82,6 +83,8 @@
 }
 
 .card {
+  animation-name: fadeInAnimation;
+  animation-duration: 3s;
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
