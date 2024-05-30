@@ -7,7 +7,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, duration } from '@mui/material';
 import ReactDOM from "react-dom/client";
 import Button from '@mui/material/Button';
 //import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -30,10 +30,17 @@ export default function Home() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const [checked, setChecked] = React.useState(false);
+    const [checkedCEC, setCheckedCEC] = React.useState(false);
 
-    const handleChange = () => {
-      setChecked((prev) => !prev);
+    const handleChangeCEC = () => {
+      setCheckedCEC((prev) => !prev);
+      setCheckedWISE(false);
+    };
+    const [checkedWISE, setCheckedWISE] = React.useState(false);
+
+    const handleChangeWISE = () => {
+      setCheckedWISE((prev) => !prev);
+      setCheckedCEC(false);
     };
 
     return (
@@ -52,16 +59,16 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
-                            <p onClick={handleChange}>Canadian Engineering Competition 2024 <span className={styles.arrowright}>-&gt;</span></p>
-                            <p>Women In Science and Engineering (WISE) <span className={styles.arrowright}>-&gt;</span></p>
+                            <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}>-&gt;</span></p>
+                            <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}>-&gt;</span></p>
                             <p>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}>-&gt;</span></p>
                             <p>Research Assistant <span className={styles.arrowright}>-&gt;</span></p>
                         </div>
                     </div>
-                   
+                   <div>
     <Box sx={{ height: 180 }}>
-      <Box sx={{ display: 'flex' }}>
-        <Fade in={checked}>
+      <Box sx={{ }}>
+        <Fade in={checkedCEC} style={{ transitionDuration: checkedCEC ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 700 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
@@ -82,8 +89,35 @@ export default function Home() {
             </Fade>
       
       </Box>
+    </Box> 
+
+    <Box sx={{ height: 180 }}>
+      <Box sx={{  }}>
+        <Fade in={checkedWISE} style={{ transitionDuration: checkedWISE ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent} sx={{ maxWidth: 700 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                    Women In Science and Engineering (WISE)
+                                </Typography>
+                                <Typography variant="body2" color="white">
+                                    The University of Calgary's Women In Science and Engineering (WISE) club has been on campus since 1990, promoting diversity 
+                                    and inclusivity in STEM fields.<br/><br/>I have been involved as WISE since 2020 in various roles, working from junior events 
+                                    coordinator to events coordinator to VP Events and finally President. I successfully organized such events as our annual 
+                                    research night that exposes undergrads to all the amazing research happening on campus, our annual networking night that
+                                    brings together upwards of 25 companies looking for interns and new grads to network with students, social events like 
+                                    trivia and crafting, and more! <br/><br/>WISE's commitment to increase opportunities in STEM professionally, academically, and 
+                                    socially for those who may have fewer opportunities is something I'm extremely passionate about and being involved has drastically
+                                    improved my undergraduate experience!
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
     </Box>
-                    
+                 </div>   
                 </div>
             </div>
         </main>
