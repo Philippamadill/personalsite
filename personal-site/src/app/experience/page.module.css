@@ -205,6 +205,11 @@ border-radius: 0.8rem;
 .logo {
   position: relative;
 }
+
+.CEC{
+  background-color: rgb(1, 1, 58);
+  opacity: 100%;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   /*.card:hover {
@@ -237,8 +242,9 @@ border-radius: 0.8rem;
   .cardcontent{
     display: flex;
     position: absolute;
+    max-width:98%;
     top: 65vh;
-    left: 2%;
+    left: 1%;
   }
   .content {
     padding: 4rem;

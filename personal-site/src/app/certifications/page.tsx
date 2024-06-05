@@ -139,7 +139,6 @@ export default function Home() {
             <div className={styles.flex}>
                 <div className={handlee.className}>
                     <h1 className={styles.AboutHeader}>Certifications</h1>
-                    <p className={styles.aboutText}>If there is an issue with viewing content, please refresh the page!</p>
                 </div>
                 <div className={styles.list}>
                     <div className={inter.className}>
@@ -155,11 +154,11 @@ export default function Home() {
                         </div>
                     </div>
                    <div>
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box className={styles.box1} sx={{ }}>
         <Fade in={checkedNL} style={{ transitionDuration: checkedNL ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
-                        <CardActionArea>
+                        <CardActionArea className={styles.CEC}>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     National Lifeguard (Pool)
@@ -172,8 +171,8 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedLSI} style={{ transitionDuration: checkedLSI ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -189,8 +188,8 @@ export default function Home() {
       
       </Box>
     </Box>  
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedSI} style={{ transitionDuration: checkedSI ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -206,8 +205,8 @@ export default function Home() {
       
       </Box>
     </Box>    
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedO2} style={{ transitionDuration: checkedO2 ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -223,8 +222,8 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedBLS} style={{ transitionDuration: checkedBLS ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -240,8 +239,8 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedFAI} style={{ transitionDuration: checkedFAI ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -257,8 +256,8 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedYL} style={{ transitionDuration: checkedYL ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -274,8 +273,8 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ }}>
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
         <Fade in={checkedCPR} style={{ transitionDuration: checkedCPR ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
