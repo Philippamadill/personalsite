@@ -75,10 +75,9 @@ export default function Home() {
       setCheckedCELC(false);
       setCheckedilab(false);
     };
-
+    const refresh=()=>window.location.reload(false);
     return (
         <main className={styles.main}>
-            location.reload();
             <div  className={styles.left}>
                 <Link href="/">
                     <div className={styles.card}>
@@ -93,6 +92,7 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
+                            
                             <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}>-&gt;</span></p>
                             <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}>-&gt;</span></p>
                             <p onClick={handleChangeCELC}>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}>-&gt;</span></p>
