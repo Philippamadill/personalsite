@@ -16,7 +16,9 @@
   flex-direction: column;
   justify-content: space-between;
   //padding: 6rem;
+  overflow: hidden;
   min-height: 100vh;
+  max-height: 100vh;
   background-image: radial-gradient(
     ellipse at 50% 50%,
     rgb(1, 1, 147),
@@ -49,11 +51,14 @@ border-radius: 0.8rem;
   font-size: 5rem;
 }
 .description {
+  position: absolute;
+  top: 30%;
+  
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   font-size: 0.85rem;
-  max-width: var(--max-width);
+  max-width: 23%;
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
@@ -66,7 +71,7 @@ border-radius: 0.8rem;
 }
 
 .description p {
-  position: relative;
+  //position: relative;
   margin: 0;
   padding: 1.2rem;
   background-color: rgba(var(--callout-rgb), 0.5);
@@ -111,9 +116,7 @@ border-radius: 0.8rem;
   animation: fadeInAnimation ease 3s;
 }
 .flex p{
-  animation-name: fadeInAnimationp;
-  animation-duration: 5s;
-
+  animation: fadeInAnimation ease 3s;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -219,10 +222,29 @@ border-radius: 0.8rem;
 
 /* Mobile */
 @media (max-width: 700px) {
+  .arrowright{
+  transition: transform 200ms; 
+  font-family: 'Inter', sans-serif;
+}
+  .main{    
+    overflow: hidden;
+    min-height: 100vh;
+    max-height:150vh;
+  }
+  .cardcontent{
+    display: flex;
+    position: absolute;
+    top: 65vh;
+    left: 2%;
+  }
   .content {
     padding: 4rem;
   }
-
+  .list{
+    display: grid;
+    grid-template-columns: 1fr;
+    //font-family: "inter", sans-serif;
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -249,25 +271,25 @@ border-radius: 0.8rem;
 
   .description {
     font-size: 0.8rem;
+    position: relative;
+    width: 100%;
   }
 
   .description a {
     padding: 1rem;
   }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
+.flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
   .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
+    //align-items: center;
+    //inset: 0 0 auto;
+    //padding: 2rem 1rem 1.4rem;
+    margin-left: 6%;
+    width: 420%;
+    border-radius: 1rem;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
     background: linear-gradient(
@@ -298,16 +320,6 @@ border-radius: 0.8rem;
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 

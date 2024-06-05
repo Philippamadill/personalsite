@@ -39,6 +39,17 @@ export default function Home() {
           </Link>
         </div>
 
+        <div
+          className={styles.card}
+        >
+          <Link href="/certifications">
+          <h2>
+            Certifications <span>-&gt;</span>
+          </h2>
+          <p>Want to view all Philippa's current certifications?</p>
+          </Link>
+        </div>
+
         </div>
       
     </main>
