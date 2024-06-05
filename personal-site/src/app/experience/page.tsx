@@ -75,6 +75,7 @@ export default function Home() {
       setCheckedCELC(false);
       setCheckedilab(false);
     };
+
     return (
         <main className={styles.main}>
             <div  className={styles.left}>
@@ -87,6 +88,7 @@ export default function Home() {
             <div className={styles.flex}>
                 <div className={handlee.className}>
                     <h1 className={styles.AboutHeader}>Experience</h1>
+                    <p className={styles.aboutText}>If there is an issue with viewing content, please refresh the page!</p>
                 </div>
                 <div className={styles.list}>
                     <div className={inter.className}>

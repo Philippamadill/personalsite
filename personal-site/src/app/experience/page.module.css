@@ -11,6 +11,9 @@
   font-variation-settings:
     "slnt" 0;
 }
+.aboutText{
+  text-align: center;
+}
 .main {
   display: flex;
   flex-direction: column;
