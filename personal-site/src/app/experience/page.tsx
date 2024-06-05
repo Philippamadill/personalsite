@@ -78,6 +78,7 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
+            location.reload();
             <div  className={styles.left}>
                 <Link href="/">
                     <div className={styles.card}>
