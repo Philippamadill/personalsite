@@ -75,7 +75,6 @@ export default function Home() {
       setCheckedCELC(false);
       setCheckedilab(false);
     };
-    const refresh=()=>window.location.reload(false);
     return (
         <main className={styles.main}>
             <div  className={styles.left}>
