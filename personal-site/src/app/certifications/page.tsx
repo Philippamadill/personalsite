@@ -20,7 +20,7 @@ import Switch from '@mui/material/Switch';
 import Paper from '@mui/material/Paper';
 import Fade from '@mui/material/Fade';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 const handlee = Handlee({ weight:'400', subsets: ["latin"] });
@@ -143,14 +143,14 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
-                            <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeO2}>Oxygen Administration <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeBLS}>Basic Life Support <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}>-&gt;</span></p>
-                            <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}>-&gt;</span></p>
+                            <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeO2}>Oxygen Administration <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeBLS}>Basic Life Support <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
                         </div>
                     </div>
                    <div>
