@@ -94,11 +94,11 @@ export default function Home() {
                     <div className={inter.className}>
                         <div className={styles.description}>
                             
-                            <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeCELC}>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeilab}>Research Assistant <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeGuard}>Lifeguard/Swim Instructor <span className={styles.arrowright}><ArrowForwardIcon fontSize="x-small"></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeCELC}>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeilab}>Research Assistant <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeGuard}>Lifeguard/Swim Instructor <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                         </div>
                     </div>
                    <div>
