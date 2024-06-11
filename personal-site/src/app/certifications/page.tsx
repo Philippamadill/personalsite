@@ -41,6 +41,7 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedLSI, setCheckedLSI] = React.useState(false);
 
@@ -53,6 +54,7 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedSI, setCheckedSI] = React.useState(false);
 
@@ -65,6 +67,7 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedO2, setCheckedO2] = React.useState(false);
 
@@ -77,6 +80,7 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedBLS, setCheckedBLS] = React.useState(false);
 
@@ -89,6 +93,7 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedFAI, setCheckedFAI] = React.useState(false);
 
@@ -101,6 +106,7 @@ export default function Home() {
       setCheckedBLS(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedYL, setCheckedYL] = React.useState(false);
 
@@ -113,6 +119,7 @@ export default function Home() {
       setCheckedBLS(false);
       setCheckedFAI(false);
       setCheckedCPR(false);
+      setCheckedIFA(false);
     };
     const [checkedCPR, setCheckedCPR] = React.useState(false);
 
@@ -125,6 +132,20 @@ export default function Home() {
       setCheckedBLS(false);
       setCheckedFAI(false);
       setCheckedYL(false);
+      setCheckedIFA(false);
+    };
+    const [checkedIFA, setCheckedIFA] = React.useState(false);
+
+    const handleChangeIFA = () => {
+    setCheckedIFA((prev) => !prev);
+      setCheckedLSI(false);
+      setCheckedNL(false);
+      setCheckedSI(false);
+      setCheckedO2(false);
+      setCheckedBLS(false);
+      setCheckedFAI(false);
+      setCheckedYL(false);
+      setCheckedCPR(false);
     };
 
     return (
@@ -151,6 +172,7 @@ export default function Home() {
                             <p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeIFA}>Intermediate First Aid, CPR-C, AED <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
                         </div>
                     </div>
                    <div>
@@ -283,6 +305,23 @@ export default function Home() {
                                     Lifesaving CPR Instructor/Examiner
                                 </Typography>
                                <Image className={styles.img} src={"/CPR instruct.png"} alt="Lifesaving CPR Instructor/Examiner certification card" width= "500" height="250"></Image>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box> 
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
+        <Fade in={checkedIFA} style={{ transitionDuration: checkedIFA ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                    Intermediate First Aid, CPR-C, AED
+                                </Typography>
+                               <Image className={styles.img} src={"/First Aid.png"} alt="Intermediate First Aid, CPR-C, AED certification card" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
