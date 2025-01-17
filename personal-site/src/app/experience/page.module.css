@@ -81,7 +81,14 @@ border-radius: 0.8rem;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
-
+.SENG513{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.cardcontent{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -114,6 +121,9 @@ border-radius: 0.8rem;
   align-items: left;
   gap: 1rem;
   
+}
+.img{
+  padding-left: 15%;
 }
 .Headshot{
   animation: fadeInAnimation ease 3s;

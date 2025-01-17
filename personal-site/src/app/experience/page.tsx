@@ -31,6 +31,16 @@ export default function Home() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const [checked513, setChecked513] = React.useState(false);
+
+    const handleChange513 = () => {
+      setChecked513((prev) => !prev);
+      setCheckedCEC(false);
+      setCheckedWISE(false);
+      setCheckedCELC(false);
+      setCheckedilab(false);
+      setCheckedGuard(false);
+    };
     const [checkedCEC, setCheckedCEC] = React.useState(false);
 
     const handleChangeCEC = () => {
@@ -39,6 +49,7 @@ export default function Home() {
       setCheckedCELC(false);
       setCheckedilab(false);
       setCheckedGuard(false);
+      setChecked513(false);
     };
     const [checkedWISE, setCheckedWISE] = React.useState(false);
 
@@ -48,6 +59,7 @@ export default function Home() {
       setCheckedCELC(false);
       setCheckedilab(false);
       setCheckedGuard(false);
+      setChecked513(false);
     };
     const [checkedCELC, setCheckedCELC] = React.useState(false);
 
@@ -57,6 +69,7 @@ export default function Home() {
       setCheckedWISE(false);
       setCheckedilab(false);
       setCheckedGuard(false);
+      setChecked513(false);
     };
     const [checkedilab, setCheckedilab] = React.useState(false);
 
@@ -66,6 +79,7 @@ export default function Home() {
       setCheckedWISE(false);
       setCheckedCELC(false);
       setCheckedGuard(false);
+      setChecked513(false);
     };
     const [checkedGuard, setCheckedGuard] = React.useState(false);
 
@@ -75,6 +89,7 @@ export default function Home() {
       setCheckedWISE(false);
       setCheckedCELC(false);
       setCheckedilab(false);
+      setChecked513(false);
     };
 
     return (
@@ -93,7 +108,7 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
-                            
+                            <p onClick={handleChange513}>MatchAid. A SENG513: Web Based Systems Project <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCELC}>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
@@ -102,6 +117,27 @@ export default function Home() {
                         </div>
                     </div>
                    <div>
+    <Box sx={{ height: 180 }}>
+      <Box sx={{ }}>
+        <Fade in={checked513} style={{ transitionDuration: checked513 ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent} sx={{ maxWidth: 700 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.SENG513}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                MatchAid. A SENG513: Web Based Systems Project
+                                </Typography>
+                                <Image className={styles.img} src={"/Screenshot 2025-01-16 151217.png"} alt="an image of MatchAid" width= "500" height="250"></Image>
+                                <Typography variant="body2" color="white">
+                                    A web based application for volunteers and organizations to find each other. This application allows organizations to post opportunities and report volunteers, volunteers to sign up for an opportunity and report organizations, and
+                                    administrators to moderate posts and remove user accounts. This project utilized Docker, TypeScript, React, Next.js, PostMan, the MantineUI component library, MongoDB, and API development
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box> 
     <Box sx={{ height: 180 }}>
       <Box sx={{ }}>
         <Fade in={checkedCEC} style={{ transitionDuration: checkedCEC ? '3s' :'3s'}}>

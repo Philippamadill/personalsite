@@ -28,10 +28,10 @@ export default function Home() {
         <div className={styles.bio}>
           <div>
         <Image className={styles.Headshot}
-            src="/Headshot - Philippa Madill.jpg"
+            src="/Philippa headshot 2024.jpg"
             alt="Picture of Philippa" 
-            width={277}
-            height= {415}/>
+            width={404}
+            height= {270}/>
             </div>
             <div className = {styles.description}>
                 <p> Philippa Madill is a software engineering and computer science student at the University of Calgary, set to graduate in spring 2025.<br/><br/>
