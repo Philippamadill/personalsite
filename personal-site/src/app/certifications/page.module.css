@@ -294,7 +294,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    .description p {
+    .description p { 
       //align-items: center;
       //inset: 0 0 auto;
       //padding: 2rem 1rem 1.4rem;

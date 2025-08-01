@@ -221,10 +221,14 @@ export default function Home() {
                                     Research Assistant
                                 </Typography>
                                 <Typography variant="body2" color="white">
-                                    Over the summer of 2024, I have been working in the University of Calgary's 
-                                    Interactions Lab (iLab) as an undergraduate research assistant. My project focuses 
-                                    on social human-robot interaction and my duties have included literature review, 
-                                    programming robots, and designing a user study.
+                                    Over 2024 and 2025, I worked in the University of Calgary's 
+                                    Interactions Lab (iLab) as an undergraduate research assistant and an undergraduate teaching assistant. My project focused 
+                                    on social human-robot interaction, group robot dynamics, and incorporating performing arts techniques into robot movement design.
+                                    I was responsible for literature review, designing and conducting studies, analysing data from the studies, and contributing to the writing of a paper 
+                                    published in CHI 2025. <Link href={"https://dl.acm.org/doi/10.1145/3706598.3713996"} target="_blank">Read the paper here.</Link> 
+                                    <br/><br/>I also worked as a teaching assistant for the iLab's undergraduate course, CPSC481: Human-Computer Interaction I. I was one of fewer
+                                    than 10 undergraduates serving in the role of teaching assistant in the department of computer science, and was responsoble for guiding 36 upper year computer science and 
+                                    software engineering students in user-centered design, and creating web applications as a course project. I was also responsible for grading these projects on their usability, user experience, and design heuristics.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -243,10 +247,10 @@ export default function Home() {
                                     Lifeguard/Swim Instructor
                                 </Typography>
                                 <Typography variant="body2" color="white">
-                                    Since 2019, I have worked intermittently as a lifeguard and swim instructor at pools in Drayton Valley and Entwistle.
+                                    Since 2019, I have worked intermittently as a lifeguard and swim instructor at pools in Drayton Valley, Entwistle, and Calgary.
                                     I progressed from junior to senior lifeguard positions, taking on additional duties such as maintaining chemical 
                                     levels, leading shifts, training new staff, opening and closing the facility, handling issues with patrons, and more!
-                                    As an instructor I have taught all levels of swimming lessons, from baby lessons to teen lessons, and have been 
+                                    As an instructor I have taught all levels of swimming lessons, from baby lessons to adult lessons, and have been 
                                     certified to teach Red Cross, Lifesaving Society, and Starfish Swim School programs. <br/><br/>Teaching and guarding 
                                     have taught me invaluable lessons, such as how to be adaptable, how to lead a team, how to handle high-stress situations, 
                                     and how to communicate effectively with adults, toddlers, and everyone in between!

@@ -42,6 +42,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedLSI, setCheckedLSI] = React.useState(false);
 
@@ -55,6 +57,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedSI, setCheckedSI] = React.useState(false);
 
@@ -68,6 +72,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedO2, setCheckedO2] = React.useState(false);
 
@@ -81,6 +87,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedBLS, setCheckedBLS] = React.useState(false);
 
@@ -94,6 +102,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedFAI, setCheckedFAI] = React.useState(false);
 
@@ -107,6 +117,8 @@ export default function Home() {
       setCheckedYL(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedYL, setCheckedYL] = React.useState(false);
 
@@ -120,6 +132,8 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedCPR(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedCPR, setCheckedCPR] = React.useState(false);
 
@@ -133,6 +147,8 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
     };
     const [checkedIFA, setCheckedIFA] = React.useState(false);
 
@@ -146,6 +162,38 @@ export default function Home() {
       setCheckedFAI(false);
       setCheckedYL(false);
       setCheckedCPR(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
+    };
+    const [checkedPoolops, setCheckedPoolops] = React.useState(false);
+
+    const handleChangePoolops = () => {
+    setCheckedPoolops((prev) => !prev);
+      setCheckedLSI(false);
+      setCheckedNL(false);
+      setCheckedSI(false);
+      setCheckedO2(false);
+      setCheckedBLS(false);
+      setCheckedFAI(false);
+      setCheckedYL(false);
+      setCheckedCPR(false);
+      setCheckedIFA(false);
+      setCheckedIPL(false);
+    };
+    const [checkedIPL, setCheckedIPL] = React.useState(false);
+
+    const handleChangeIPL = () => {
+    setCheckedIPL((prev) => !prev);
+      setCheckedLSI(false);
+      setCheckedNL(false);
+      setCheckedSI(false);
+      setCheckedO2(false);
+      setCheckedBLS(false);
+      setCheckedFAI(false);
+      setCheckedYL(false);
+      setCheckedCPR(false);
+      setCheckedIFA(false);
+      setCheckedPoolops(false);
     };
 
     return (
@@ -173,6 +221,8 @@ export default function Home() {
                             <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeIFA}>Intermediate First Aid, CPR-C, AED <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangePoolops}>Swimming Pool Operator 1 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeIPL}>International Pool Lifeguard <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
                         </div>
                     </div>
                    <div>
@@ -322,6 +372,40 @@ export default function Home() {
                                     Intermediate First Aid, CPR-C, AED
                                 </Typography>
                                <Image className={styles.img} src={"/first aid and cpr.png"} alt="Intermediate First Aid, CPR-C, AED certification card" width= "500" height="250"></Image>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box> 
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
+        <Fade in={checkedPoolops} style={{ transitionDuration: checkedPoolops ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                    Swimming Pool Operator 1
+                                </Typography>
+                               <Image className={styles.img} src={"/pool ops.png"} alt="Pool operator certification card" width= "500" height="250"></Image>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box>  
+    <Box sx={{ height: 180 }} className={styles.box}>
+      <Box sx={{ }} className={styles.box}>
+        <Fade in={checkedIPL} style={{ transitionDuration: checkedIPL ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                    International Pool Lifeguard
+                                </Typography>
+                               <Image className={styles.img} src={"/ipl.jpg"} alt="International Pool Lifeguard" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
