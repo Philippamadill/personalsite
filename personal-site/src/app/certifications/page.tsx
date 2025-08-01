@@ -165,9 +165,9 @@ export default function Home() {
                     <div className={inter.className}>
                         <div className={styles.description}>
                             <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            {/*<p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeO2}>Oxygen Administration <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            {/*<p onClick={handleChangeO2}>Oxygen Administration <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeBLS}>Basic Life Support <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             */}<p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
@@ -202,7 +202,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Lifesaving Instructor/Examiner
                                 </Typography>
-                               <Image className={styles.img} src={"/image(1).png"} alt="LSI certification card" width= "500" height="250"></Image>
+                               <Image className={styles.img} src={"/lifesaving instructor.png"} alt="LSI certification card" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
@@ -219,7 +219,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Swim Instructor/Examiner
                                 </Typography>
-                               <Image className={styles.img} src={"/image(3).png"} alt="SI certification card" width= "500" height="250"></Image>
+                               <Image className={styles.img} src={"/swim instructor.png"} alt="SI certification card" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
@@ -304,7 +304,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Lifesaving CPR Instructor/Examiner
                                 </Typography>
-                               <Image className={styles.img} src={"/CPR instruct.png"} alt="Lifesaving CPR Instructor/Examiner certification card" width= "500" height="250"></Image>
+                               <Image className={styles.img} src={"/CPR instructor.png"} alt="Lifesaving CPR Instructor/Examiner certification card" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
@@ -321,7 +321,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Intermediate First Aid, CPR-C, AED
                                 </Typography>
-                               <Image className={styles.img} src={"/First Aid.png"} alt="Intermediate First Aid, CPR-C, AED certification card" width= "500" height="250"></Image>
+                               <Image className={styles.img} src={"/first aid and cpr.png"} alt="Intermediate First Aid, CPR-C, AED certification card" width= "500" height="250"></Image>
                             </CardContent>
                         </CardActionArea>
                     </Card>
