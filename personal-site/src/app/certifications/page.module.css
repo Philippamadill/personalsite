@@ -229,7 +229,7 @@
   }
   
   /* Mobile */
-  @media (max-width: 700px) {
+  @media (max-width: 1150px) {
     .main{    
       overflow: hidden;
       min-height: 100vh;
@@ -241,15 +241,19 @@
       padding: 4rem;
     }
     .img{
-      width: 86vw;
+      width: 55vw;
       height: 20vh;
+      margin-left: -1.5vw;
     }
     .cardcontent{
       display: flex;
       position: absolute;
       top: 85vh;
       left: 2%;
-      max-width: 98%;
+      width: 60vw;
+      height: 30vh;
+      margin-top: 16.5%;
+      margin-left: 15vw;
     }
     .list{
       display: grid;
@@ -266,6 +270,7 @@
     .card {
       padding: 1rem 2.5rem;
     }
+
   
     .card h2 {
       margin-bottom: 0.5rem;

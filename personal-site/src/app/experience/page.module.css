@@ -239,15 +239,20 @@ border-radius: 0.8rem;
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 816px) {
   .arrowright{
   transition: transform 200ms; 
   font-family: 'Inter', sans-serif;
 }
+.img{
+  width: 96vw;
+  height: 30vh;
+  margin-left: -10vw;
+}
   .main{    
     overflow: hidden;
     min-height: 100vh;
-    max-height:150vh;
+    max-height:160vh;
   }
   .cardcontent{
     display: flex;
@@ -255,6 +260,7 @@ border-radius: 0.8rem;
     max-width:98%;
     top: 65vh;
     left: 1%;
+    margin-top: 16%;
   }
   .content {
     padding: 4rem;
