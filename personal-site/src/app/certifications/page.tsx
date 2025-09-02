@@ -21,6 +21,7 @@ import Paper from '@mui/material/Paper';
 import Fade from '@mui/material/Fade';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowDownward from '@mui/icons-material/ArrowDownward';
 
 
 const handlee = Handlee({ weight:'400', subsets: ["latin"] });
@@ -30,6 +31,21 @@ export default function Home() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const [checkedAquatics, setCheckedAquatics] = React.useState(false);
+    const handleChangeAquatics = () => {
+      setCheckedAquatics((prev) => !prev);
+      setCheckedNL(false);
+      setCheckedLSI(false);
+      setCheckedSI(false);
+      setCheckedO2(false);
+      setCheckedBLS(false);
+      setCheckedFAI(false);
+      setCheckedYL(false);
+      setCheckedCPR(false);
+      setCheckedIFA(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
+    }; 
     const [checkedNL, setCheckedNL] = React.useState(false);
 
     const handleChangeNL = () => {
@@ -164,6 +180,7 @@ export default function Home() {
       setCheckedCPR(false);
       setCheckedPoolops(false);
       setCheckedIPL(false);
+      setCheckedAquatics(false);
     };
     const [checkedPoolops, setCheckedPoolops] = React.useState(false);
 
@@ -212,24 +229,47 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
-                            <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            {/*<p onClick={handleChangeO2}>Oxygen Administration <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeBLS}>Basic Life Support <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            */}<p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeYL}>Youth Leader <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeAquatics}>Aquatics Certifications <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeIFA}>Intermediate First Aid, CPR-C, AED <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangePoolops}>Swimming Pool Operator 1 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeIPL}>International Pool Lifeguard <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
-                        </div>
+                            </div>
                     </div>
                    <div>
+    <div>
+      <Fade in={checkedAquatics} style={{ transitionDuration: checkedAquatics ? '3s' :'3s'}}>
+          <div>
+          <h2 className={styles.cardHeader}>Aquatics Certifications</h2>
+          <div className={styles.cardcontent1}>
+            <div className={styles.options}>
+          <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangePoolops}>Swimming Pool Operator 1 <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+           </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeIPL}>International Pool Lifeguard <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+           </div>
+          </div>
+          </div>                                     
+      </Fade>
+
+
+    </div>
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box className={styles.box1} sx={{ }}>
         <Fade in={checkedNL} style={{ transitionDuration: checkedNL ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea className={styles.CEC}>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -246,7 +286,7 @@ export default function Home() {
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedLSI} style={{ transitionDuration: checkedLSI ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -263,7 +303,7 @@ export default function Home() {
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedSI} style={{ transitionDuration: checkedSI ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -277,44 +317,12 @@ export default function Home() {
       
       </Box>
     </Box>    
-    <Box sx={{ height: 180 }} className={styles.box}>
-      <Box sx={{ }} className={styles.box}>
-        <Fade in={checkedO2} style={{ transitionDuration: checkedO2 ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
-                        <CardActionArea>
-                            <CardContent className={styles.CEC}>
-                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
-                                    Oxygen Administration
-                                </Typography>
-                               <Image className={styles.img} src={"/Screenshot 2024-05-31 090445.png"} alt="O2 certification card" width= "500" height="250"></Image>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-            </Fade>
-      
-      </Box>
-    </Box> 
-    <Box sx={{ height: 180 }} className={styles.box}>
-      <Box sx={{ }} className={styles.box}>
-        <Fade in={checkedBLS} style={{ transitionDuration: checkedBLS ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
-                        <CardActionArea>
-                            <CardContent className={styles.CEC}>
-                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
-                                    Basic Life Support
-                                </Typography>
-                               <Image className={styles.img} src={"/BLS.png"} alt="BLS certification card" width= "500" height="250"></Image>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-            </Fade>
-      
-      </Box>
-    </Box> 
+    
+   
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedFAI} style={{ transitionDuration: checkedFAI ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -328,27 +336,11 @@ export default function Home() {
       
       </Box>
     </Box> 
-    <Box sx={{ height: 180 }} className={styles.box}>
-      <Box sx={{ }} className={styles.box}>
-        <Fade in={checkedYL} style={{ transitionDuration: checkedYL ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
-                        <CardActionArea>
-                            <CardContent className={styles.CEC}>
-                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
-                                    Youth Leader
-                                </Typography>
-                               <Image className={styles.img} src={"/Youth Leader.png"} alt="Youth Leader certification card" width= "500" height="250"></Image>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-            </Fade>
-      
-      </Box>
-    </Box> 
+     
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedCPR} style={{ transitionDuration: checkedCPR ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -382,7 +374,7 @@ export default function Home() {
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedPoolops} style={{ transitionDuration: checkedPoolops ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
@@ -399,7 +391,7 @@ export default function Home() {
     <Box sx={{ height: 180 }} className={styles.box}>
       <Box sx={{ }} className={styles.box}>
         <Fade in={checkedIPL} style={{ transitionDuration: checkedIPL ? '3s' :'3s'}}>
-            <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
+            <Card className={styles.cardcontent2} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
