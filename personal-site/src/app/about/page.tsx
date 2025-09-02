@@ -42,7 +42,8 @@ export default function Home() {
                 Calgary's Women In Science and Engineering (WISE) club for her entire post secondary career, eventually serving as president of one of the largest student organizations on campus.<br/><br/>
 
                 Philippa spent many years as a competitive lifesaver, eventually using her skills to become a lifeguard and swim instructor. She has collected aquatic certifications including international pool lifeguard
-                and SCUBA diving, allowing her to explore the underwater world, taking in its beauty. Following her graduation, Philippa relocated to the UK to pursue her software development career.
+                and SCUBA diving, allowing her to explore the underwater world, taking in its beauty. Following her graduation, Philippa took advantage of Canada's Youth Mobility Scheme and relocated to the UK to pursue 
+                her software development career without the need for sponsorship.
                 At any given moment you can find Philippa within 5 feet of a book and a receptacle of tea (which she drinks a frankly concerning amount of).
                 <br/><br/><span className={styles.LinkedIn}><Link href={"https://www.linkedin.com/in/philippa-madill"} target="_blank"><LinkedInIcon></LinkedInIcon></Link>  <Link href={"mailto: philippamadill@gmail.com"}><MailOutlineIcon></MailOutlineIcon></Link></span>
                 </p>
