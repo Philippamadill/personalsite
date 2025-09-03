@@ -108,11 +108,11 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
+                            <p onClick={handleChangeilab}>Research Assistant <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChange513}>MatchAid. A SENG513: Web Based Systems Project <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCEC}>Canadian Engineering Competition 2024 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeWISE}>Women In Science and Engineering (WISE) <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeCELC}>Canadian Engineering <br/>Leadership Conference 2023 <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeilab}>Research Assistant <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeGuard}>Lifeguard/Swim Instructor <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                         </div>
                     </div>
@@ -172,6 +172,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Women In Science and Engineering (WISE)
                                 </Typography>
+                                <Image className={styles.img} src={"/WISE Team.jpeg"} alt="The 2024/25 WISE Team" width= "400" height="200"></Image>
                                 <Typography variant="body2" color="white">
                                     The University of Calgary's Women In Science and Engineering (WISE) club has been on campus since 1990, promoting diversity 
                                     and inclusivity in STEM fields.<br/><br/>I have been involved as WISE since 2020 in various roles, working from junior events 
@@ -220,12 +221,13 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                     Research Assistant
                                 </Typography>
+                                <Image className={styles.img} src={"/CHI Presentation.jpeg"} alt="Philippa and the team presetning their work at CHI 2025" width= "400" height="200"></Image>
                                 <Typography variant="body2" color="white">
                                     Over 2024 and 2025, I worked in the University of Calgary's 
                                     Interactions Lab (iLab) as an undergraduate research assistant and an undergraduate teaching assistant. My project focused 
                                     on social human-robot interaction, group robot dynamics, and incorporating performing arts techniques into robot movement design.
                                     I was responsible for literature review, designing and conducting studies, analysing data from the studies, and contributing to the writing of a paper 
-                                    published in CHI 2025. <Link href={"https://dl.acm.org/doi/10.1145/3706598.3713996"} target="_blank">Read the paper here.</Link> 
+                                    published in CHI 2025. <u><Link href={"https://dl.acm.org/doi/10.1145/3706598.3713996"} target="_blank">Read the paper here.</Link></u>
                                     <br/><br/>I also worked as a teaching assistant for the iLab's undergraduate course, CPSC481: Human-Computer Interaction I. I was one of fewer
                                     than 10 undergraduates serving in the role of teaching assistant in the department of computer science, and was responsoble for guiding 36 upper year computer science and 
                                     software engineering students in user-centered design, and creating web applications as a course project. I was also responsible for grading these projects on their usability, user experience, and design heuristics.

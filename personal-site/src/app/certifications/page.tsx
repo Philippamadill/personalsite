@@ -212,6 +212,40 @@ export default function Home() {
       setCheckedIFA(false);
       setCheckedPoolops(false);
     };
+    
+    const [checkedDegrees, setCheckedDegrees] = React.useState(false);
+
+    const handleChangeDegrees = () => {
+    setCheckedDegrees((prev) => !prev);
+      setCheckedIFA(false);
+      setCheckedLSI(false);
+      setCheckedNL(false);
+      setCheckedSI(false);
+      setCheckedO2(false);
+      setCheckedBLS(false);
+      setCheckedFAI(false);
+      setCheckedYL(false);
+      setCheckedCPR(false);
+      setCheckedPoolops(false);
+      setCheckedIPL(false);
+      setCheckedAquatics(false);
+    };
+
+    const [checkedEngineering, setCheckedEngineering] = React.useState(false);  
+    const handleChangeEngineering = () => {
+    setCheckedEngineering((prev) => !prev);
+      setCheckedIFA(false);
+      setCheckedAquatics(false);
+      setCheckedCPSC(false);
+    };
+
+    const [checkedCPSC, setCheckedCPSC] = React.useState(false);  
+    const handleChangeCPSC = () => {
+    setCheckedCPSC((prev) => !prev);
+      setCheckedIFA(false);
+      setCheckedAquatics(false);
+      setCheckedEngineering(false);
+    };
 
     return (
         <main className={styles.main}>
@@ -231,6 +265,7 @@ export default function Home() {
                         <div className={styles.description}>
                             <p onClick={handleChangeAquatics}>Aquatics Certifications <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeIFA}>Intermediate First Aid, CPR-C, AED <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
+                            <p onClick={handleChangeDegrees}>Degrees <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             </div>
                     </div>
                    <div>
@@ -260,6 +295,25 @@ export default function Home() {
           <div className={styles.options}>
           <p onClick={handleChangeIPL}>International Pool Lifeguard <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
            </div>
+          </div>
+          </div>                                     
+      </Fade>
+
+
+    </div>
+
+    <div>
+      <Fade in={checkedDegrees} style={{ transitionDuration: checkedDegrees ? '3s' :'3s'}}>
+          <div>
+          <h2 className={styles.cardHeader}>Degrees</h2>
+          <div className={styles.cardcontent1}>
+            <div className={styles.options}>
+          <p onClick={handleChangeEngineering}>BSc Software Engineering (with Distinction) <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+          <div className={styles.options}>
+          <p onClick={handleChangeCPSC}>BSc(Hons.) Computer Science <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
+          </div>
+        
           </div>
           </div>                                     
       </Fade>
@@ -398,6 +452,52 @@ export default function Home() {
                                     International Pool Lifeguard
                                 </Typography>
                                <Image className={styles.img} src={"/ipl.jpg"} alt="International Pool Lifeguard" width= "500" height="250"></Image>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box> 
+
+    <Box sx={{ height: 180 }}>
+      <Box sx={{ }}>
+        <Fade in={checkedEngineering} style={{ transitionDuration: checkedEngineering ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent3} sx={{ maxWidth: 700 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                Bachelor of Science in Software Engineering (With Distinction)
+                                </Typography>
+                                <Image className={styles.img} src={"/BSc Software.png"} alt="copy of degree parchment" width= "400" height="250"></Image>
+                                <Typography variant="body2" color="white">
+                                    Granted by the University of Calgary in May 2025. Final GPA 3.46. My Capstone project involved incorporating a brain computer interface into a power mobility device to allow children with 
+                                    quadriplegic cerebral palsy to gain independent movement in physical space. This was a multidisciplinary project bewtwwen Software, Biomedical, and Mechanical Engineering and earned our team 
+                                    second place in the Biomedical category at the annual Capstone Design fair.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+            </Fade>
+      
+      </Box>
+    </Box> 
+
+    <Box sx={{ height: 180 }}>
+      <Box sx={{ }}>
+        <Fade in={checkedCPSC} style={{ transitionDuration: checkedCPSC ? '3s' :'3s'}}>
+            <Card className={styles.cardcontent3} sx={{ maxWidth: 700 }}>
+                        <CardActionArea>
+                            <CardContent className={styles.CEC}>
+                                <Typography gutterBottom variant="h5" component="div" color={"white"}>
+                                Bachelor of Science (Honours) in Computer Science
+                                </Typography>
+                                <Image className={styles.img} src={"/BSc Hons CPSC.png"} alt="copy of degree parchment" width= "400" height="250"></Image>
+                                <Typography variant="body2" color="white">
+                                    Granted by the University of Calgary in May 2025. Final GPA 3.46. My honours thesis was titled "Brain-Computer Interface Operation in Virtual Reality for Children with Complex Mobility Needs".
+                                    The project involved developing a virtual reality digital twin of a physical power mobility device to allow children with quadriplegic cerebral palsy to simulate movement in a safe environment 
+                                    before transitioning skills to the real world. My work was published in the 11th International BCI Meeting in Banff, Canada in June 2025.
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                     </Card>
