@@ -45,6 +45,9 @@ export default function Home() {
       setCheckedIFA(false);
       setCheckedPoolops(false);
       setCheckedIPL(false);
+      setCheckedDegrees(false);
+      setCheckedEngineering(false);
+      setCheckedCPSC(false);
     }; 
     const [checkedNL, setCheckedNL] = React.useState(false);
 
@@ -181,6 +184,9 @@ export default function Home() {
       setCheckedPoolops(false);
       setCheckedIPL(false);
       setCheckedAquatics(false);
+      setCheckedDegrees(false);
+      setCheckedEngineering(false);
+      setCheckedCPSC(false);
     };
     const [checkedPoolops, setCheckedPoolops] = React.useState(false);
 
@@ -229,6 +235,8 @@ export default function Home() {
       setCheckedPoolops(false);
       setCheckedIPL(false);
       setCheckedAquatics(false);
+      setCheckedEngineering(false);
+      setCheckedCPSC(false);
     };
 
     const [checkedEngineering, setCheckedEngineering] = React.useState(false);  
