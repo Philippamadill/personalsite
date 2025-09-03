@@ -271,9 +271,9 @@ export default function Home() {
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>
+                            <p onClick={handleChangeDegrees}>Degrees <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeAquatics}>Aquatics Certifications <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             <p onClick={handleChangeIFA}>Intermediate First Aid, CPR-C, AED <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize:13}}></ArrowForwardIcon></span></p>
-                            <p onClick={handleChangeDegrees}>Degrees <span className={styles.arrowright}><ArrowForwardIcon sx={{fontSize: 13}}></ArrowForwardIcon></span></p>
                             </div>
                     </div>
                    <div>
