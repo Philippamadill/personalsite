@@ -93,8 +93,8 @@
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
   color: white;
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 34%;
+  min-width: 34%;
 }
 
 .card span {
@@ -190,6 +190,8 @@
 
   .card {
     padding: 1rem 2.5rem;
+  max-width: 80%;
+  min-width: 80%;
   }
 
   .card h2 {

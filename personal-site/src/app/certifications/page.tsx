@@ -257,6 +257,11 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
+            <div className={styles.flex}>
+                <div className={handlee.className}>
+                    <h1 className={styles.AboutHeader}>Certifications</h1>
+                </div>
+                
             <div  className={styles.left}>
                 <Link href="/">
                     <div className={styles.card}>
@@ -264,10 +269,6 @@ export default function Home() {
                     </div>
                 </Link>
             </div>
-            <div className={styles.flex}>
-                <div className={handlee.className}>
-                    <h1 className={styles.AboutHeader}>Certifications</h1>
-                </div>
                 <div className={styles.list}>
                     <div className={inter.className}>
                         <div className={styles.description}>

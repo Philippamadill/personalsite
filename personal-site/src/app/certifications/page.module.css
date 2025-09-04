@@ -111,12 +111,14 @@
     border-radius: 0.8rem;
   
   }
-  .left{
-    display: flex;
-    text-align: left;
-    justify-content: left;
-    padding-top:0%;
-    margin-top: 0%;
+    
+.left{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  padding-top:0%;
+  margin-top: 0%;
+
   }
   .name{
     text-align: center;
