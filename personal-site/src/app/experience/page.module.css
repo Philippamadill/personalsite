@@ -74,7 +74,7 @@ border-radius: 0.8rem;
 }
 
 .description p {
-  //position: relative;
+  position: relative;
   margin: 0;
   padding: 1.2rem;
   background-color: rgba(var(--callout-rgb), 0.5);

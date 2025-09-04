@@ -279,28 +279,28 @@ export default function Home() {
                    <div>
     <div>
       <Fade in={checkedAquatics} style={{ transitionDuration: checkedAquatics ? '3s' :'3s'}}>
-          <div>
+          <div className= {styles.aquatics}>
           <h2 className={styles.cardHeader}>Aquatics Certifications</h2>
-          <div className={styles.cardcontent1}>
-            <div className={styles.options}>
+          <div className={styles.cardcontent4}>
+            <div className={styles.options1}>
           <p onClick={handleChangeNL}>National Lifeguard (Pool) <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
           </div>
-          <div className={styles.options}>
+          <div className={styles.options1}>
           <p onClick={handleChangeLSI}>Lifesaving Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
           </div>
-          <div className={styles.options}>
+          <div className={styles.options1}>
           <p onClick={handleChangeSI}>Swim Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
           </div>
-          <div className={styles.options}>
+          <div className={styles.options1}>
           <p onClick={handleChangeFAI}>Lifesaving First Aid Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
           </div>
-          <div className={styles.options}>
+          <div className={styles.options1}>
           <p onClick={handleChangeCPR}>Lifesaving CPR Instructor/Examiner <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
           </div>
-          <div className={styles.options}>
+          <div className={styles.options1}>
           <p onClick={handleChangePoolops}>Swimming Pool Operator 1 <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
            </div>
-          <div className={styles.options}>
+          <div className={styles.options1a}>
           <p onClick={handleChangeIPL}>International Pool Lifeguard <span className={styles.arrowright}><ArrowDownward sx={{fontSize: 13}}></ArrowDownward></span></p>
            </div>
           </div>
@@ -417,7 +417,7 @@ export default function Home() {
       </Box>
     </Box> 
     <Box sx={{ height: 180 }} className={styles.box}>
-      <Box sx={{ }} className={styles.box}>
+      <Box sx={{ }} className={styles.box1}>
         <Fade in={checkedIFA} style={{ transitionDuration: checkedIFA ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 600 }}>
                         <CardActionArea>
@@ -494,6 +494,7 @@ export default function Home() {
     <Box sx={{ height: 180 }}>
       <Box sx={{ }}>
         <Fade in={checkedCPSC} style={{ transitionDuration: checkedCPSC ? '3s' :'3s'}}>
+            <div className= {styles.CPSC}>
             <Card className={styles.cardcontent3} sx={{ maxWidth: 700 }}>
                         <CardActionArea>
                             <CardContent className={styles.CEC}>
@@ -509,6 +510,7 @@ export default function Home() {
                             </CardContent>
                         </CardActionArea>
                     </Card>
+            </div>
             </Fade>
       
       </Box>

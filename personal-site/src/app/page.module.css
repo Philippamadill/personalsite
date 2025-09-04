@@ -93,6 +93,8 @@
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
   color: white;
+  max-width: 80%;
+  min-width: 80%;
 }
 
 .card span {
@@ -116,7 +118,7 @@
   text-wrap: balance;
   color: rgba(255, 255, 255, 0.797);
 }
-
+ 
 .center {
   display: flex;
   justify-content: center;
