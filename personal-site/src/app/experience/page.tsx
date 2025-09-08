@@ -122,11 +122,11 @@ export default function Home() {
         <Fade in={checked513} style={{ transitionDuration: checked513 ? '3s' :'3s'}}>
             <Card className={styles.cardcontent} sx={{ maxWidth: 700 }}>
                         <CardActionArea>
-                            <CardContent className={styles.SENG513}>
+                            <CardContent className={styles.CEC}>
                                 <Typography gutterBottom variant="h5" component="div" color={"white"}>
                                 MatchAid. A SENG513: Web Based Systems Project
                                 </Typography>
-                                <Image className={styles.img} src={"/Screenshot 2025-01-16 151217.png"} alt="an image of MatchAid" width= "500" height="250"></Image>
+                                <Image className={styles.img} src={"/Screenshot 2025-01-16 151217.png"} alt="an image of MatchAid" width= "450" height="200"></Image>
                                 <Typography variant="body2" color="white">
                                     A web based application for volunteers and organizations to find each other. This application allows organizations to post opportunities and report volunteers, volunteers to sign up for an opportunity and report organizations, and
                                     administrators to moderate posts and remove user accounts. This project utilized Docker, TypeScript, React, Next.js, PostMan, the MantineUI component library, MongoDB, and API development
